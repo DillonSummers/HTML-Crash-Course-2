@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+    font-family: "Roboto", sans-serif;
+  }
+
+  nav {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    background-color: cyan;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    background-color: rgb(219, 176, 237);
+  }
+
+  button{
+    background-color: turquoise;
+    color: whitesmoke;
+    border: none;
+    border-radius: 20%;
+    padding: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  #about {
+    display: flex;
+    flex-direction: column; /* Make children stack vertically */
+    padding: 0 16px;
+    background-color: yellow; /* You already had this */
+  }
+  
+  #about h2 {
+    margin-bottom: 16px; /* space between title and paragraphs */
+  }
+  
+  #about div {
+    display: flex;
+    flex-direction: column;
+    gap: 12px; /* space between paragraphs and image */
+  }
+
+  #discord {
+    display: flex;
+    flex-direction: column; /* stack everything vertically */
+    align-items: center;
+    padding: 0 16px;
+    background-color: lightblue;
+  }
+  
+  #discord h2 {
+    margin-bottom: 16px;
+  }
+  
+  #discord figure, 
+  #discord div {
+    margin-bottom: 16px; /* add space between figure and paragraphs */
+  }
+  
+  #discord div {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center; /* optional: center paragraphs horizontally */
+  }
+  
+  #contact {
+    display: flex;
+    flex-direction: column; /* Stack title and form vertically */
+    align-items: center;
+    padding: 0 16px;
+    background-color: lightgreen; /* Light green background for contact section */
+    margin-bottom: 30px; /* Prevent touching the bottom of the screen */
+  }
+  
+  #contact h2 {
+    margin-bottom: 16px; /* Space between the title and form */
+  }
+  
+  #contact div {
+    display: flex;
+    flex-direction: column;
+    gap: 12px; /* Space between form fields */
+  }
+  
+  #contact form {
+    display: flex;
+    flex-direction: column; /* Stack form elements vertically */
+    gap: 12px;
+    width: 100%;
+    max-width: 400px; /* Control form width */
+  }
+  
+  #contact input, 
+  #contact textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  #contact button {
+    padding: 12px 20px; /* Increase padding for a more clickable button */
+    background-color: cyan; /* Button color */
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px; /* Make text more readable */
+    margin-top: 16px; /* Space between form fields and button */
+  }
+  
+  #contact button:hover {
+    background-color: #0099cc; /* Hover effect */
+  }
+  
+  
+
+  a {
+    color: black;
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  .logo {
+    width: 300px; /* or whatever size you want */
+}
+
+  ul {
+    display: flex;
+  }
+
+  li {
+    list-style-type: none;
+    padding-left: 16px;
+  }
+
+/* SMALL PHONES< TABLETS< LARGE SMARTPHONES */
+  @media (max-width: 728px) {
+    .row{
+    flex-direction: column;
+  }
+
+.home__description {
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+  h1 {
+    text-align: center;
+    font-size: 60px;
+  }
+
+  .subheader {
+    text-align: center;
+    font-size: 28px;
+
+  }
+
+  ul {
+    display: none;
+  }
+
+  .section__description {
+    flex-direction: column;
+  }
+
+  .section__description--wrapper {
+    width: 100%;
+  }
+
+  .about__img--wrapper {
+    width: 100%;
+  }
+
+  #discord .section__description {
+    flex-direction: column-reverse;
+  }
+}
